@@ -1,0 +1,257 @@
+﻿<Window x:Class="Direct_Response.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Direct_Response"
+        xmlns:dr="clr-namespace:Direct_Response.ViewModel"
+        xmlns:con="clr-namespace:Direct_Response.Model"
+        xmlns:u="clr-namespace:Direct_Response.Utility"
+        mc:Ignorable="d"
+        Title="Direct Response" Height="650" Width="850" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        Closed="Window_Closed"
+        UseLayoutRounding="True"
+        StateChanged="Window_StateChanged">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type dr:SentVM}">
+            <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Right" Width="Auto" MaxWidth="500" Height="Auto">
+                <Label Foreground="Black" Background="#fbfbfb" BorderThickness="5" HorizontalAlignment="Right" >
+                    <TextBlock TextWrapping="WrapWithOverflow" Foreground="#00fbfb" Text="{Binding Model.Text}" FontSize="20"/>
+                </Label>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type dr:DeliveredVM}">
+            <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Left" Width="Auto" MaxWidth="500" Height="Auto">
+                <Label Foreground="Black" Background="#00fbfb" BorderThickness="5" HorizontalAlignment="Left">
+                    <TextBlock TextWrapping="WrapWithOverflow" Foreground="White" Text="{Binding Model.Text}" FontSize="20"/>
+                </Label>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type dr:ConversationVM}">
+            <StackPanel x:Name="Conversation" Orientation="Horizontal" Margin="5 0 0 0" >
+                <Ellipse Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Ellipse.Fill>
+                        <ImageBrush x:Name="ConversationImage" ImageSource="{Binding Model.Image}" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="ConversationImageRing" Width="52" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="-50 0 0 0" StrokeThickness="2">
+                    <Ellipse.Style>
+                        <Style TargetType="Ellipse">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Model.Seen}" Value="1">
+                                    <Setter Property="Stroke" Value="OrangeRed"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Model.Seen}" Value="0">
+                                    <Setter Property="Stroke" Value="Transparent"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Ellipse.Style>
+                </Ellipse>
+                <TextBlock x:Name="ConversationFullName" Width="Auto" Margin="20 0 0 0" VerticalAlignment="Center" FontSize="15" Text="{Binding Model.Name}"/>
+                <StackPanel.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Delete" Command="{Binding Delete}"/>
+                    </ContextMenu>
+                </StackPanel.ContextMenu>
+            </StackPanel>
+        </DataTemplate>
+        <RoutedUICommand x:Key="OnReturnAddMessage" />
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource OnReturnAddMessage}" Executed="OnReturnAddMessage"/>
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#000000" Offset="0.0"/>
+                <GradientStop Color="#000000" Offset="0.25"/>
+                <GradientStop Color="#0d0d0d" Offset="0.50"/>
+                <GradientStop Color="#263238" Offset="0.75"/>
+                <GradientStop Color="#455A64" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border Name="windowBorderDrag" Grid.Row="0" Background="Transparent" MouseLeftButtonDown="windowBorderDrag_MouseLeftButtonDown">
+            <Grid>
+                <materialDesign:ColorZone Mode="PrimaryDark" Background="Transparent">
+                    <StackPanel HorizontalAlignment="Right">
+                        <Button Name="WindowMinimize" Width="40" Height="40" Padding="0" Click="WindowMinimize_Click" Margin="0 0 80 0" Background="#37474F" BorderBrush="Transparent" BorderThickness="20">
+                            <materialDesign:PackIcon Kind="WindowMinimize"/>
+                        </Button>
+                        <Button Name="WindowMaximize" Width="40" Height="40" Padding="0" Click="WindowMaximize_Click" Margin="40 -40 40 0" Background="#37474F" BorderBrush="Transparent" BorderThickness="20">
+                            <materialDesign:PackIcon Kind="WindowMaximize"/>
+                        </Button>
+                        <Button Name="WindowClose" Width="40" Height="40" Padding="0" Click="WindowClose_Click" Margin="80 -40 0 0" Background="#37474F" BorderBrush="Transparent" BorderThickness="20">
+                            <materialDesign:PackIcon Kind="WindowClose"/>
+                        </Button>
+                    </StackPanel>
+                </materialDesign:ColorZone>
+                <StackPanel x:Name="DirectResponseBorder" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <TextBlock FontFamily="pack://application:,,,/Fonts/#CODE Light" FontWeight="Light" FontSize="17" Margin="10 0 0 0" Text="Direct Response" Foreground="#CFD8DC"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Grid x:Name="LogInSection" Grid.Row="1" Visibility="Collapsed" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="LogoRow" Grid.Row="0" Background="Transparent"  Margin="0 80 0 0">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+                    <TextBlock FontFamily="pack://application:,,,/Fonts/#CODE Light" FontSize="210" Text="D" Foreground="#fbfbfb"  FontWeight="UltraLight" Margin="31 0 -31 0"/>
+                    <TextBlock FontFamily="pack://application:,,,/Fonts/#CODE Light" FontSize="210" Text="R" Foreground="#00fbfb"  FontWeight="UltraLight" Margin="-31 0 0 0"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="LogInFormRow" Grid.Row="1" Background="Transparent" Margin="0 -10 0 0">
+                <materialDesign:ColorZone Mode="PrimaryMid"  Background="Transparent" Height="300">
+                    <StackPanel x:Name="LogInForm" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Bottom" Opacity="0" Margin="0 20">
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon x:Name="tbUserNameIcon" Kind="Account" Foreground="{Binding ElementName=tbUserName, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4"/>
+                            <TextBox x:Name="tbUserName" Width="400" materialDesign:HintAssist.Hint="User_name" Padding="2 0 0 0" />
+                            <materialDesign:PackIcon x:Name="tbUserNameFailIcon" Kind="Information" Foreground="{Binding ElementName=tbUserName, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4" Visibility="Collapsed" ToolTip="Invalid username."/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <materialDesign:PackIcon x:Name="tbPasswordIcon" Kind="Key" Foreground="{Binding ElementName=tbPassword, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4"/>
+                            <PasswordBox x:Name="tbPassword" Width="400" materialDesign:HintAssist.Hint="Password" Padding="2 0 0 0"/>
+                            <materialDesign:PackIcon x:Name="tbPasswordFailIcon" Kind="Information" Foreground="{Binding ElementName=tbPassword, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4" Visibility="Collapsed" ToolTip="Invalid password."/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <CheckBox x:Name="chbRememberMe" Content="Remember me" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="30">
+                            <Button x:Name="btnLogin" Content="LOG_IN" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="100 0 100 0" Background="#CFD8DC" Foreground="#263238" BorderBrush="#CFD8DC" Click="btnLogin_Click"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="80 10 10 10">
+                            <TextBlock Text="Don't have an account?"/>
+                            <TextBlock  Margin="10 0 0 0">
+                            <Hyperlink x:Name="HyperLinkRegister" Click="HyperLinkRegister_Click">Create an one.</Hyperlink>
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </materialDesign:ColorZone>
+            </Grid>
+        </Grid>
+        <Grid x:Name="LandingSection" Grid.Row="1" Visibility="Visible" Background="#263238">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="Menu" Grid.Column="0" Background="#263238" Margin="0 0 175 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <StackPanel x:Name="menuNavigation" VerticalAlignment="Center" HorizontalAlignment="Right" Visibility="Visible">
+                    <Button x:Name="hideMenu" Width="40" Height="40" Padding="0" Margin="0 0 15 0" Visibility="Collapsed" Background="Transparent" BorderBrush="Transparent" BorderThickness="10" Click="hideMenu_Click">
+                        <materialDesign:PackIcon Kind="Close" Width="40" Height="40" Foreground="#CFD8DC"/>
+                    </Button>
+                    <Button x:Name="showMenu" Width="40" Height="40" Padding="0" Margin="0 0 15 0" Visibility="Visible" Background="Transparent" BorderBrush="Transparent" BorderThickness="10" Click="showMenu_Click">
+                        <materialDesign:PackIcon Kind="Menu" Width="40" Height="40" Foreground="#CFD8DC"/>
+                    </Button>
+                </StackPanel>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <ListBox x:Name="ListOfConversations" ItemsSource="{Binding CurrentUserVM.RootVM.Messages}" SelectionChanged="ListView_SelectionChanged" Grid.Row="0" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Visibility="Visible" Padding="0" Margin="0" HorizontalContentAlignment="Stretch" RenderOptions.BitmapScalingMode="HighQuality" IsSynchronizedWithCurrentItem="True"/>
+                    <Button x:Name="btnAddConversation" Margin="10 0 10 10" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="40" Height="40" Style="{StaticResource MaterialDesignFloatingActionButton}" ToolTip="Add Conversation" Visibility="Collapsed" Click="btnAddConversation_Click" RenderOptions.BitmapScalingMode="HighQuality">
+                        <materialDesign:PackIcon Kind="Plus" Width="30" Height="30"/>
+                    </Button>
+                </Grid>
+                <StackPanel x:Name="settingsPanel" Grid.Row="2" Width="250" Height="Auto" Background="#263238" Margin="0 0 0 0">
+                    <Button x:Name="btnSettings" Margin="-400 0 0 0" Content="Settings" Width="100" Click="btnSettings_Click"/>
+                    <Button x:Name="hideSettings" Width="40" Height="40" Padding="0" Margin="170 0 0 0" Visibility="Collapsed" Background="Transparent" BorderBrush="Transparent" BorderThickness="10" Click="hideSettings_Click">
+                        <materialDesign:PackIcon Kind="Close" Width="40" Height="40" Foreground="#CFD8DC"/>
+                    </Button>
+                    <Grid Width="250" Height="580" Margin="0 10 0 0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="2*"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" FontFamily="pack://application:,,,/Fonts/#CODE Light" FontWeight="Light" FontSize="20" Margin="10 0 0 0" Text="Account info" Foreground="#CFD8DC" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <StackPanel x:Name="accountImage" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Button x:Name="btnUpdateImage" Width="120" Height="120" Style="{StaticResource MaterialDesignFloatingActionButton}" ToolTip="Change profile image" Click="btnUpdateImage_Click">
+                                <Button.Background>
+                                    <ImageBrush x:Name="AccountImage" ImageSource="{Binding CurrentUserVM.Model.Image}" RenderOptions.EdgeMode="Aliased" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Button.Background>
+                            </Button>
+                        </StackPanel>
+                        <TextBlock Grid.Row="2" FontFamily="pack://application:,,,/Fonts/#CODE Light" FontWeight="Light" FontSize="20" Margin="10 0 0 0" Text="Account options" Foreground="#CFD8DC" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <StackPanel Grid.Row="3" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <StackPanel Orientation="Horizontal" Margin="10">
+                                <materialDesign:PackIcon Kind="Account" Foreground="{Binding ElementName=userInfo, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4"/>
+                                <TextBox x:Name="userInfo" Width="220" materialDesign:HintAssist.Hint="User_name" Padding="2 0 0 0" IsEnabled="False" Text="{Binding CurrentUserVM.Model.UserName}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="10">
+                                <materialDesign:PackIcon Kind="Key" Foreground="{Binding ElementName=passwordInfo, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4"/>
+                                <PasswordBox x:Name="passwordInfo" Width="220" materialDesign:HintAssist.Hint="Password" Padding="2 0 0 0" PasswordChanged="passwordInfo_PasswordChanged"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="10">
+                                <materialDesign:PackIcon Kind="Key" Foreground="{Binding ElementName=rePasswordInfo, Path=BorderBrush}" VerticalAlignment="Bottom" Margin="0 4"/>
+                                <PasswordBox x:Name="rePasswordInfo" Width="220" materialDesign:HintAssist.Hint="Re-Password" Padding="2 0 0 0" PasswordChanged="passwordInfo_PasswordChanged"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <Button x:Name="btnUpdate" Content="Update" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#CFD8DC" Foreground="#263238" BorderBrush="#CFD8DC" Click="btnUpdate_Click" IsEnabled="False"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <TextBlock Grid.Row="4" FontFamily="pack://application:,,,/Fonts/#CODE Light" FontWeight="Light" FontSize="20" Margin="10 0 0 0" Text="Account log out" Foreground="#CFD8DC" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <StackPanel Grid.Row="5" Orientation="Vertical">
+                            <Button x:Name="btnLogOut" Width="100" Background="#CFD8DC" Margin="10" Click="btnLogOut_Click">
+                                <materialDesign:PackIcon Kind="AccountOff" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Transparent" Foreground="#263238" BorderBrush="#CFD8DC"/>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="Messages" Grid.Column="1" Background="#37474F" Margin="-175 0 0 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ListView x:Name="MessageList" Grid.Row="0" Margin="30" ItemsSource="{Binding CurrentUserVM.CurrentConversationVM.Messages}" Focusable="False" Padding="0" HorizontalContentAlignment="Stretch" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" >
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="IsEnabled" Value="False"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                </ListView>
+                <StackPanel Grid.Row="1" Margin="5 0 5 5" Background="Transparent">
+                    <Grid x:Name="grdMessageControl" Visibility="Collapsed">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Name="tbMessage" Grid.Column="0" Height="Auto" Padding="2 0 0 0" TextWrapping="WrapWithOverflow" Margin="10 0 10 10" Background="Transparent" Foreground="#CFD8DC" HorizontalAlignment="Stretch" Text="{Binding Model.Text}" AcceptsReturn="False" >
+                            <TextBox.InputBindings>
+                                <KeyBinding Key="Return" Command="{StaticResource OnReturnAddMessage}" />
+                            </TextBox.InputBindings>
+                        </TextBox>
+                        <Button x:Name="SendMessage" Grid.Column="1" Width="30" Height="30" Background="Transparent" Padding="0" BorderBrush="Transparent" BorderThickness="5" Foreground="{Binding ElementName=tbMessage, Path=BorderBrush}" Command="{u:ComBinding CurrentUserVM.CurrentConversationVM.AddMessage}" CommandParameter="{Binding ElementName=tbMessage, Path=Text}" IsEnabled="{Binding ElementName=tbMessage, Path=Text.Length}" Click="SendMessage_Click">
+                            <materialDesign:PackIcon Kind="Send" Width="30" Height="30" BorderBrush="Transparent" BorderThickness="5"/>
+                        </Button>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Direct_Response_UsersDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="NonDeliveredMessages">
+          <Key>
+            <PropertyRef Name="IdMessage" />
+          </Key>
+          <Property Name="IdMessage" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Message" Type="text" Nullable="false" />
+          <Property Name="FromId" Type="int" Nullable="false" />
+          <Property Name="From" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="FromImage" Type="text" Nullable="false" />
+          <Property Name="ToId" Type="int" Nullable="false" />
+          <Property Name="To" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Function Name="NonDeliveredDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idMessage" Type="int" Mode="In" />
+        </Function>
+        <Function Name="NonDeliveredInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="to" Type="nvarchar" Mode="In" />
+          <Parameter Name="toId" Type="int" Mode="In" />
+          <Parameter Name="from" Type="nvarchar" Mode="In" />
+          <Parameter Name="fromId" Type="int" Mode="In" />
+          <Parameter Name="fromImage" Type="text" Mode="In" />
+          <Parameter Name="message" Type="text" Mode="In" />
+        </Function>
+        <EntityContainer Name="Direct_Response_UsersDbModelStoreContainer">
+          <EntitySet Name="NonDeliveredMessages" EntityType="Self.NonDeliveredMessages" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Direct_Response_UsersDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="NonDeliveredMessage">
+          <Key>
+            <PropertyRef Name="IdMessage" />
+          </Key>
+          <Property Name="IdMessage" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FromId" Type="Int32" Nullable="false" />
+          <Property Name="From" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FromImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ToId" Type="Int32" Nullable="false" />
+          <Property Name="To" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Direct_Response_UsersDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="NonDeliveredMessages" EntityType="Self.NonDeliveredMessage" />
+          <FunctionImport Name="NonDeliveredDelete">
+            <Parameter Name="idMessage" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="NonDeliveredInsert">
+            <Parameter Name="to" Mode="In" Type="String" />
+            <Parameter Name="toId" Mode="In" Type="Int32" />
+            <Parameter Name="from" Mode="In" Type="String" />
+            <Parameter Name="fromId" Mode="In" Type="Int32" />
+            <Parameter Name="fromImage" Mode="In" Type="String" />
+            <Parameter Name="message" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Direct_Response_UsersDbModelStoreContainer" CdmEntityContainer="Direct_Response_UsersDbEntities">
+          <EntitySetMapping Name="NonDeliveredMessages">
+            <EntityTypeMapping TypeName="Direct_Response_UsersDbModel.NonDeliveredMessage">
+              <MappingFragment StoreEntitySet="NonDeliveredMessages">
+                <ScalarProperty Name="IdMessage" ColumnName="IdMessage" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="FromId" ColumnName="FromId" />
+                <ScalarProperty Name="From" ColumnName="From" />
+                <ScalarProperty Name="FromImage" ColumnName="FromImage" />
+                <ScalarProperty Name="ToId" ColumnName="ToId" />
+                <ScalarProperty Name="To" ColumnName="To" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="NonDeliveredDelete" FunctionName="Direct_Response_UsersDbModel.Store.NonDeliveredDelete" />
+          <FunctionImportMapping FunctionImportName="NonDeliveredInsert" FunctionName="Direct_Response_UsersDbModel.Store.NonDeliveredInsert" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

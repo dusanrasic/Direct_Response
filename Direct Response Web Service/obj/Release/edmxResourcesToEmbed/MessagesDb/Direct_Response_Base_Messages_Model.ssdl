@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Direct_Response_UsersDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NonDeliveredMessages">
+    <Key>
+      <PropertyRef Name="IdMessage" />
+    </Key>
+    <Property Name="IdMessage" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Message" Type="text" Nullable="false" />
+    <Property Name="FromId" Type="int" Nullable="false" />
+    <Property Name="From" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FromImage" Type="text" Nullable="false" />
+    <Property Name="ToId" Type="int" Nullable="false" />
+    <Property Name="To" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Function Name="NonDeliveredDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idMessage" Type="int" Mode="In" />
+  </Function>
+  <Function Name="NonDeliveredInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="to" Type="nvarchar" Mode="In" />
+    <Parameter Name="toId" Type="int" Mode="In" />
+    <Parameter Name="from" Type="nvarchar" Mode="In" />
+    <Parameter Name="fromId" Type="int" Mode="In" />
+    <Parameter Name="fromImage" Type="text" Mode="In" />
+    <Parameter Name="message" Type="text" Mode="In" />
+  </Function>
+  <EntityContainer Name="Direct_Response_UsersDbModelStoreContainer">
+    <EntitySet Name="NonDeliveredMessages" EntityType="Self.NonDeliveredMessages" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

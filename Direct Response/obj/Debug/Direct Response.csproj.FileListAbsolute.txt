@@ -1,0 +1,149 @@
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\Direct Response.exe.config
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\Direct Response.exe
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\Direct Response.pdb
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\MaterialDesignColors.dll
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\RegisterWindow.g.cs
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\MainWindow.g.cs
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\App.g.cs
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Response_MarkupCompile.cache
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Response_MarkupCompile.lref
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\App.baml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\RegisterWindow.baml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\MainWindow.baml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Response.g.resources
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct_Response.Properties.Resources.resources
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Response.csproj.GenerateResource.Cache
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Response.exe
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Response.pdb
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\bin\Debug\Direct Response.exe.config
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\bin\Debug\Direct Response.exe
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\bin\Debug\Direct Response.pdb
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\bin\Debug\MaterialDesignColors.dll
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\RegisterWindow.g.cs
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\MainWindow.g.cs
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\App.g.cs
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\Direct Response_MarkupCompile.cache
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\Direct Response_MarkupCompile.lref
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\App.baml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\RegisterWindow.baml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\MainWindow.baml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\Direct Response.g.resources
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\Direct_Response.Properties.Resources.resources
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\Direct Response.csproj.GenerateResource.Cache
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\Direct Response.exe
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\Direct Response.pdb
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Response\Direct Messages\obj\Debug\Direct Response.csprojResolveAssemblyReference.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\bin\Debug\Direct Response.exe.config
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\bin\Debug\Direct Response.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\bin\Debug\Direct Response.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\bin\Debug\MaterialDesignColors.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\App.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\Direct Response_MarkupCompile.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\Direct Response_MarkupCompile.lref
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\App.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\Direct Response.g.resources
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\Direct_Response.Properties.Resources.resources
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\Direct Response.csproj.GenerateResource.Cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\Direct Response.csproj.CoreCompileInputs.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\Direct Response.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\Direct Response.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\View\AddConversationWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\View\RegisterWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\View\MainWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\View\AddConversationWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\View\RegisterWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\View\MainWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Messages\obj\Debug\Direct Response.csprojResolveAssemblyReference.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\Direct Response.exe.config
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\Direct Response.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\Direct Response.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\MaterialDesignColors.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\AddConversationWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\RegisterWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\MainWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\App.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response_MarkupCompile.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response_MarkupCompile.lref
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\App.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\AddConversationWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\RegisterWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\MainWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response.g.resources
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct_Response.Properties.Resources.resources
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response.csproj.GenerateResource.Cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response.csproj.CoreCompileInputs.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\EntityFramework.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\EntityFramework.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response_Content.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\RegistrationSuccessWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\RegistrationSuccessWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\UpdateSuccessWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\View\UpdateSuccessWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\Direct Response Web Service.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\Direct Response Web Service.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\bin\Debug\Direct Response Web Service.exe.config
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response.csproj.CopyComplete
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response\obj\Debug\Direct Response.exe.config
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\Direct Response.exe.config
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\Direct Response.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\Direct Response.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\Direct Response Web Service.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\EntityFramework.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\MaterialDesignColors.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\EntityFramework.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\AddConversationWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\RegisterWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\MainWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\RegistrationSuccessWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\UpdateSuccessWindow.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\App.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response_Content.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response_MarkupCompile.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response_MarkupCompile.lref
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\App.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\AddConversationWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\RegisterWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\MainWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\RegistrationSuccessWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\View\UpdateSuccessWindow.baml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response.g.resources
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct_Response.Properties.Resources.resources
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response.csproj.GenerateResource.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response.csproj.CoreCompileInputs.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response.csproj.CopyComplete
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\Direct Response Web Service.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\Direct Response Web Service.exe.config
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\bin\Debug\MaterialDesignColors.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response\obj\Debug\Direct Response.csprojResolveAssemblyReference.cache

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Direct_Response_UsersDbModelStoreContainer" CdmEntityContainer="Direct_Response_UsersDbEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Direct_Response_UsersDbModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Full_name" ColumnName="Full_name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="UserInsert" FunctionName="Direct_Response_UsersDbModel.Store.UserInsert" />
+    <FunctionImportMapping FunctionImportName="UserUpdate" FunctionName="Direct_Response_UsersDbModel.Store.UserUpdate" />
+  </EntityContainerMapping>
+</Mapping>

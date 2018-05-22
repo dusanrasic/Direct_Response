@@ -1,0 +1,30 @@
+﻿<Window x:Class="Direct_Response.View.RegistrationSuccessWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Direct_Response"
+        mc:Ignorable="d"
+        Title="RegistrationSuccess" Height="200" Width="450"
+        WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontFamily="pack://application:,,,/Fonts/#CODE Light" FontWeight="Light" Text="You are successfully registered." FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 30 0 0" Foreground="#CFD8DC"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="btnSuccessRegistration" IsDefault="True" Content="Nice" Click="btnSuccessRegistration_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

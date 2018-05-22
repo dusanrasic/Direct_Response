@@ -1,0 +1,69 @@
+﻿<Window x:Class="Direct_Response.AddConversationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Direct_Response"
+        xmlns:dr="clr-namespace:Direct_Response.ViewModel"
+        xmlns:db="clr-namespace:Direct_Response.UsersDb"
+        xmlns:u="clr-namespace:Direct_Response.Utility"
+        mc:Ignorable="d"
+        Title="Add Conversation" Height="300" Width="400"
+        WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type db:UserDb}">
+            <StackPanel Orientation="Horizontal" Margin="0">
+                <Ellipse Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="{Binding Image}" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.EdgeMode="Aliased"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock x:Name="UserFullName" Margin="20 0 0 0" VerticalAlignment="Center" FontSize="15" Text="{Binding Full_Name}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Border Name="windowBorderDrag" Grid.Row="0" Background="Transparent" MouseLeftButtonDown="windowBorderDrag_MouseLeftButtonDown">
+            <Grid>
+                <materialDesign:ColorZone Mode="PrimaryDark" Background="Transparent">
+                    <StackPanel HorizontalAlignment="Right">
+                        <Button Name="btnAddConversationClose" Width="30" Height="30" Padding="0" Click="btnAddConversationClose_Click" Background="#263238" BorderBrush="Transparent" BorderThickness="20" Margin="0">
+                            <materialDesign:PackIcon Kind="WindowClose"/>
+                        </Button>
+                    </StackPanel>
+                </materialDesign:ColorZone>
+                <StackPanel x:Name="DirectResponseBorder" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <TextBlock FontFamily="pack://application:,,,/Fonts/#CODE Light" FontWeight="Light" FontSize="17" Margin="10 0 0 0" Text="Add Conversation" Foreground="#CFD8DC"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10 5 10 5">
+            <TextBox x:Name="tbSearchUser" Width="380" materialDesign:HintAssist.Hint="Enter Name of User" Padding="2 0 0 0" Text="{Binding Search, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+        <ListView x:Name="lvAddConversation" Grid.Row="2" ItemsSource="{Binding ItemsView}" IsSynchronizedWithCurrentItem="True" SelectionChanged="lvAddConversation_SelectionChanged">
+            
+        </ListView>
+        <StackPanel Orientation="Horizontal" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="btnAddConversation" Width="50" Margin="5" IsDefault="True" Click="btnAddConversation_Click">
+                <materialDesign:PackIcon Kind="AccountPlus"/>
+            </Button>
+            <Button x:Name="btnAbortAddConversation" Width="50" Margin="5" IsCancel="True" >
+                <materialDesign:PackIcon Kind="Close"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

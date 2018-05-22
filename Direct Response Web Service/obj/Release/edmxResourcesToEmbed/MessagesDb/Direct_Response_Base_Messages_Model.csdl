@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Direct_Response_UsersDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NonDeliveredMessage">
+    <Key>
+      <PropertyRef Name="IdMessage" />
+    </Key>
+    <Property Name="IdMessage" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FromId" Type="Int32" Nullable="false" />
+    <Property Name="From" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FromImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ToId" Type="Int32" Nullable="false" />
+    <Property Name="To" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Direct_Response_UsersDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NonDeliveredMessages" EntityType="Self.NonDeliveredMessage" />
+    <FunctionImport Name="NonDeliveredDelete">
+      <Parameter Name="idMessage" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="NonDeliveredInsert">
+      <Parameter Name="to" Mode="In" Type="String" />
+      <Parameter Name="toId" Mode="In" Type="Int32" />
+      <Parameter Name="from" Mode="In" Type="String" />
+      <Parameter Name="fromId" Mode="In" Type="Int32" />
+      <Parameter Name="fromImage" Mode="In" Type="String" />
+      <Parameter Name="message" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

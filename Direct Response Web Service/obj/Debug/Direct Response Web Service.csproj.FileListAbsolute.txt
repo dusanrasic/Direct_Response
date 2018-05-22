@@ -1,0 +1,20 @@
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\bin\Debug\Direct Response Web Service.exe.config
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\bin\Debug\Direct Response Web Service.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\bin\Debug\Direct Response Web Service.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.csproj.CoreCompileInputs.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\bin\Debug\EntityFramework.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\bin\Debug\EntityFramework.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.csproj.CopyComplete
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response_05_12_17\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.csprojResolveAssemblyReference.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\bin\Debug\Direct Response Web Service.exe.config
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\bin\Debug\Direct Response Web Service.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\bin\Debug\Direct Response Web Service.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\bin\Debug\EntityFramework.dll
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\bin\Debug\EntityFramework.xml
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.csproj.CoreCompileInputs.cache
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.csproj.CopyComplete
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.exe
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.pdb
+C:\Users\duki9\OneDrive\Duki\Diplomski (Assets)\Direct Response\Direct Response Web Service\obj\Debug\Direct Response Web Service.csprojResolveAssemblyReference.cache

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Direct_Response_UsersDbModelStoreContainer" CdmEntityContainer="Direct_Response_UsersDbEntities">
+    <EntitySetMapping Name="NonDeliveredMessages">
+      <EntityTypeMapping TypeName="Direct_Response_UsersDbModel.NonDeliveredMessage">
+        <MappingFragment StoreEntitySet="NonDeliveredMessages">
+          <ScalarProperty Name="IdMessage" ColumnName="IdMessage" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="FromId" ColumnName="FromId" />
+          <ScalarProperty Name="From" ColumnName="From" />
+          <ScalarProperty Name="FromImage" ColumnName="FromImage" />
+          <ScalarProperty Name="ToId" ColumnName="ToId" />
+          <ScalarProperty Name="To" ColumnName="To" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="NonDeliveredDelete" FunctionName="Direct_Response_UsersDbModel.Store.NonDeliveredDelete" />
+    <FunctionImportMapping FunctionImportName="NonDeliveredInsert" FunctionName="Direct_Response_UsersDbModel.Store.NonDeliveredInsert" />
+  </EntityContainerMapping>
+</Mapping>

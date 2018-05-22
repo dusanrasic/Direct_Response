@@ -1,0 +1,23 @@
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\Direct Messages.exe.config
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\Direct Messages.exe
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\Direct Messages.pdb
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\MainWindow.g.cs
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\App.g.cs
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Messages_MarkupCompile.cache
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Messages_MarkupCompile.lref
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\MainWindow.baml
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Messages.g.resources
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct_Messages.Properties.Resources.resources
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Messages.csproj.GenerateResource.Cache
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Messages.exe
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Messages.pdb
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\MaterialDesignColors.dll
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.dll
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.pdb
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\bin\Debug\MaterialDesignThemes.Wpf.xml
+c:\users\duki9\documents\visual studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\App.baml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\RegisterWindow.g.cs
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\RegisterWindow.baml
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Messages.csprojResolveAssemblyReference.cache
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Response_MarkupCompile.cache
+C:\Users\duki9\Documents\Visual Studio 2017\Projects\Direct Messages\Direct Messages\obj\Debug\Direct Response_MarkupCompile.lref
